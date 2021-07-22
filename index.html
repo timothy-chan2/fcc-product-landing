@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Product Landing Page</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar" aria-label="Main Navigation">
+      <img id="header-img" src="images/logo.png" alt="Daymak company logo">
+  
+      <ul class="nav-setting">
+        <li class="enlarge"><a class="nav-link" href="#option-list">Options</a></li>
+        <li class="enlarge"><a class="nav-link" href="#video">Demo Video</a></li>
+        <li class="enlarge"><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <main>
+      <h1>Boomerbuggy X Mobility Scooter</h1>
+      <p id="slogan">Making riding on the sidewalk cool</p>
+
+      <section>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="john.smith@email.com" required>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </section>
+    
+      <section>
+        <ul id="option-list" class="offset">
+          <li><strong>Paint colors:</strong> white, blue, silver</li>
+          <li><strong>Windows:</strong> manual, electric</li>
+          <li><strong>Drive assemblies:</strong> front-wheel drive (FWD), all-wheel drive (AWD)</li>
+          <li><strong>Air conditioning</strong></li>
+        </ul>
+      </section>
+  
+      <section>
+        <iframe id="video" name="demo" src="https://www.youtube.com/embed/BhAKel39U5k" title="YouTube demo video of Boomerbuggy X" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+  
+      <section id="pricing">
+        <section class="stand" id="card-stand">
+          <h2 class="model_name">STANDARD</h2>
+          <p><strong>$6500</strong></p>
+          <ul class="stand_list">
+            <li>Manual windows</li>
+            <li>Front-wheel drive (FWD)</li>
+            <li>No air conditioning</li>
+          </ul>
+          <button id="sel1">SELECT</button>
+        </section>
+        <section class="lux" id="card-lux">
+          <h2 class="model_name">LUXURIOUS</h2>
+          <p><strong>$8000</strong></p>
+          <ul class="lux_list">
+            <li>Electric windows</li>
+            <li>All-wheel drive (AWD)</li>
+            <li>Air conditioning</li>
+          </ul>
+          <button id="sel2">SELECT</button>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <ul class="foot-setting">
+      <li><a class="foot-link" href="#">Privacy</a></li>
+      <li><a class="foot-link" href="#">About</a></li>
+      <li><a class="foot-link" href="#">Contact</a></li>
+    </ul>
+    <div class="ref">
+      <div>This page is not affiliated with, endorsed by, or sponsored by Daymak, Inc</div>
+      <div>Daymak and its various marks are trademarks of Daymak, Inc</div>
+      <div>Daymak logo from https://biz.prlog.org/daymak2/logo.png</div>
+      <div>Background image from https://img.wallpapersafari.com/desktop/1920/1080/0/47/Smd0jL.jpg</div>
+    </div>
+  </footer>
+
+  <!-- For running JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

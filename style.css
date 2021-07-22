@@ -1,0 +1,229 @@
+body {
+  font-family: Helvetica, Georgia;
+  background: #e1e5ea; /*Backup background color*/
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+  top: 92px;
+}
+
+/*Class wrap used to create the opaque background image*/
+.wrap {
+  position: relative;
+}
+
+.wrap:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15; 
+  background-image: url('images/city_park.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(90deg, #8ab6d6 0%, #8ab6d6 70%, #A71157);
+  z-index: 1;
+  transition: 1s;
+  box-shadow: 0 2px rgba(39, 33, 33, 0.3);
+}
+
+#header-img {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.nav-setting {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-link {
+  padding: 20px 60px 20px 60px;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: #789EBA;
+}
+
+h1 {
+  font-size: 1.4em;
+  padding-top: 20px;
+}
+
+#slogan {
+  font-size: 1.2em;
+}
+
+#option-list {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 1em;
+  text-align: left;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/*Offset to avoid hiding content behind navbar when using navbar links to jump to a section*/
+.offset:before { 
+  display: block; 
+  content: " "; 
+  height: 60px;
+  margin-top: -20px;
+  visibility: hidden;
+}
+
+input, button {
+  font-size: 1em;
+}
+
+#pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 130px;
+}
+
+.stand, .lux {
+  border-style: solid;
+  border-width: thin;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.model_name {
+  background: #8ab6d6;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.stand_list, .lux_list {
+  list-style-type: none;
+  padding: 0;
+  line-height: 40px;
+}
+
+#video {
+  width: 616px;
+  height: 347px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.foot-link {
+  padding: 10px 20px 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  background: linear-gradient(270deg, #8ab6d6 0%, #8ab6d6 70%, #A71157);
+  padding-bottom: 10px;
+  text-align: right;
+  z-index: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.foot-setting {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  font-size: 1.15em;
+}
+
+.ref {
+  font-size: 0.6em;
+  padding-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  margin-bottom: 30px;
+  background-color: #81b214;
+  transition: .3s;
+  border-color: black;
+}
+
+#submit {
+  cursor: pointer;
+  background-color: #81b214;
+  transition: .3s;
+  border-color: black;
+}
+
+#submit:hover, #submit:focus, button:hover, button:focus {
+  background-color: #A5E619;
+}
+
+.enlarge:hover, .enlarge:focus-within {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1230px) {
+  .nav-setting {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-link {
+  padding: 0px 30px 0px 30px;
+  font-size: 1.27em;
+  line-height: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  #video {
+    width:420px;
+    height: 236px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.15em;
+  }
+  
+  #slogan {
+    font-size: 1.1em;
+  }
+}
+
+/* Used to highlight a card*/
+.card-highlight {
+  border-color: #A71157;
+  border-width: thick;
+  border-radius: 20px;
+}
+
+.card-highlight2 {
+  background-color: #A71157;
+  border-radius: 8px;
+}
