@@ -159,7 +159,7 @@ footer {
 }
 
 .ref {
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding-right: 10px;
 }
 
@@ -201,7 +201,7 @@ button {
 
 @media (max-width: 900px) {
   #video {
-    width:420px;
+    width:418px;
     height: 236px;
   }
 }
