@@ -11,7 +11,7 @@ main {
   display: grid;
   justify-content: center;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 2em;
   position: relative;
   top: 92px;
 }
@@ -58,7 +58,7 @@ main {
 
 .nav-link {
   padding: 20px 60px 20px 60px;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: black;
   text-decoration: none;
   transition: .3s;
@@ -92,7 +92,7 @@ h1 {
   display: block; 
   content: " "; 
   height: 60px;
-  margin-top: -20px;
+  margin-top: -13px;
   visibility: hidden;
 }
 
@@ -102,7 +102,7 @@ input, button {
 
 #pricing {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
   padding-top: 60px;
   padding-bottom: 130px;
@@ -110,8 +110,8 @@ input, button {
 
 .stand, .lux {
   border-style: solid;
-  border-width: thin;
-  width: 300px;
+  border-width: medium;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -155,11 +155,10 @@ footer {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  font-size: 1.15em;
+  font-size: 1.6em;
 }
 
 .ref {
-  font-size: 0.8em;
   padding-right: 10px;
 }
 
@@ -183,7 +182,7 @@ button {
 }
 
 .enlarge:hover, .enlarge:focus-within {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @media (max-width: 1230px) {
@@ -195,7 +194,11 @@ button {
   .nav-link {
   padding: 0px 30px 0px 30px;
   font-size: 1.27em;
-  line-height: 22px;
+  line-height: 30px;
+  }
+  
+  #header-img {/*jul 27*/
+    width: 120px;
   }
 }
 
@@ -203,16 +206,6 @@ button {
   #video {
     width:418px;
     height: 236px;
-  }
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.15em;
-  }
-  
-  #slogan {
-    font-size: 1.1em;
   }
 }
 
