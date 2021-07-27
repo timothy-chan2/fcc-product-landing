@@ -47,7 +47,6 @@ main {
 }
 
 #header-img {
-  width: 100px;
   margin-left: 50px;
 }
 
@@ -198,7 +197,8 @@ button {
   }
   
   #header-img {
-    width: 120px;
+    width: 122px;
+    height: 122px;
   }
 }
 
